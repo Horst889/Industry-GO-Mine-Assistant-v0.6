@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Industry GO Mine Assistant"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Automatisches Sondieren und Bauen im grünen lokalen Bereich. Nexus-Verbrauch ist gesperrt." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Priorität: Uran → Seltene Erden → Diamant → Titan → Gold → Silber → Öl → Kupfer → Kohle → Eisen → Stein → Lehm. Position 1–11: 90–100 %, Lehm: 10–100 %." />
+
+        <Switch
+            android:id="@+id/switchDryRun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:checked="true"
+            android:text="Testmodus – nicht endgültig bauen" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Geometrie"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editLocalDiameter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grüner Sondierungsbereich – Durchmesser in m"
+            android:inputType="numberDecimal"
+            android:text="96" />
+
+        <EditText
+            android:id="@+id/editMineDiameter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ziel-Minendurchmesser in m"
+            android:inputType="numberDecimal"
+            android:text="20" />
+
+        <EditText
+            android:id="@+id/editSafetyMargin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sicherheitsabstand in m"
+            android:inputType="numberDecimal"
+            android:text="0.75" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Fallback-Koordinaten"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editProbeX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sondieren X (0–1)"
+            android:inputType="numberDecimal"
+            android:text="0.20" />
+
+        <EditText
+            android:id="@+id/editProbeY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sondieren Y (0–1)"
+            android:inputType="numberDecimal"
+            android:text="0.83" />
+
+        <EditText
+            android:id="@+id/editBuildX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bauen X (0–1)"
+            android:inputType="numberDecimal"
+            android:text="0.59" />
+
+        <EditText
+            android:id="@+id/editBuildY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bauen Y (0–1)"
+            android:inputType="numberDecimal"
+            android:text="0.83" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Einstellungen speichern" />
+
+        <Button
+            android:id="@+id/buttonAccessibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="1. Bedienungshilfe aktivieren" />
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="2. Automatik START" />
+
+        <Button
+            android:id="@+id/buttonStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="STOP" />
+
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Status: bereit"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textCounters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Gebaut: 0 | Übersprungen: 0" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Industry GO Mine Assistant</string>
+    <string name="accessibility_description">Automatisiert die Minenplatzierung nach einer festgelegten Rohstoffpriorität.</string>
+</resources>
